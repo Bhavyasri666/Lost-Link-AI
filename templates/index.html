@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LostLink AI</title>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+
+    <h2>🛰️ LostLink AI</h2>
+
+
+    <nav>
+
+        <a href="/">Home</a>
+
+        <a href="/report-lost">Report Lost</a>
+
+        <a href="/report-found">Report Found</a>
+
+        <a href="/dashboard">Dashboard</a>
+
+    </nav>
+
+
+</header>
+
+
+
+
+
+<!-- ================= FLASH MESSAGE ================= -->
+
+{% with messages = get_flashed_messages() %}
+
+{% if messages %}
+
+<div class="success-message">
+
+    {{ messages[0] }}
+
+</div>
+
+{% endif %}
+
+{% endwith %}
+
+
+
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+
+    <h1>
+        AI Powered Lost & Found Platform
+    </h1>
+
+
+
+    <p>
+
+        Connect lost and found items with AI-powered graph technology for faster, smarter, and more accurate matching.
+
+    </p>
+
+
+
+
+    <div class="hero-buttons">
+
+
+        <a href="/report-lost" class="btn">
+
+            📦 Report Lost Item
+
+        </a>
+
+
+
+        <a href="/report-found" class="btn">
+
+            📍 Report Found Item
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<div class="container">
+
+
+
+<form action="/search" method="POST">
+
+
+    <h2 class="search-title">
+
+        🔎 Search Lost Item
+
+    </h2>
+
+
+
+
+    <input
+
+    type="text"
+
+    name="item"
+
+    placeholder="Search item (Example: Watch, iPhone, Laptop, ID Card)"
+
+    required>
+
+
+
+    <div class="search-btn">
+
+
+        <button type="submit">
+
+            🔍 Search Using AI
+
+        </button>
+
+
+    </div>
+
+
+</form>
+
+
+
+
+
+
+
+<!-- ================= MATCH RESULTS ================= -->
+
+
+{% if matches %}
+
+
+
+<h2 class="match-title">
+
+🤖 AI Possible Matches
+
+</h2>
+
+
+
+
+
+{% for item in matches %}
+
+
+
+
+<div class="result-card">
+
+
+
+<h3>
+
+{{item.lost_item}}
+
+</h3>
+
+
+
+
+
+<p>
+
+<b>Found Item :</b>
+
+{{item.found_item}}
+
+</p>
+
+
+
+
+
+<p>
+
+<b>Match Score :</b>
+
+{{item.score}}%
+
+</p>
+
+
+
+
+
+<p>
+
+<b>Status :</b>
+
+{{item.status}}
+
+</p>
+
+
+
+
+
+
+{% if item.owner %}
+
+<p>
+
+<b>Lost By :</b>
+
+{{item.owner}}
+
+</p>
+
+{% endif %}
+
+
+
+
+
+{% if item.finder %}
+
+<p>
+
+<b>Found By :</b>
+
+{{item.finder}}
+
+</p>
+
+{% endif %}
+
+
+
+
+
+</div>
+
+
+
+
+
+{% endfor %}
+
+
+
+{% endif %}
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer>
+
+
+    © 2026 LostLink AI | AI Powered Lost & Found System
+
+
+</footer>
+
+
+
+
+</body>
+
+</html>

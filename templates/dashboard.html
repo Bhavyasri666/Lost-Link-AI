@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<h2>📊 LostLink AI Dashboard</h2>
+
+<nav>
+
+<a href="/">Home</a>
+
+<a href="/report-lost">Report Lost</a>
+
+<a href="/report-found">Report Found</a>
+
+</nav>
+
+</header>
+
+<div class="container">
+
+<h2 class="search-title">
+
+System Statistics
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📦 Lost Items</h3>
+
+<h1>{{ lost }}</h1>
+
+</div>
+
+<div class="card">
+
+<h3>📍 Found Items</h3>
+
+<h1>{{ found }}</h1>
+
+</div>
+
+<div class="card">
+
+<h3>👤 Users</h3>
+
+<h1>{{ people }}</h1>
+
+</div>
+
+<div class="card">
+
+<h3>🤖 AI Matches</h3>
+
+<h1>{{ matches }}</h1>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 LostLink AI Dashboard
+
+</footer>
+
+</body>
+
+</html>

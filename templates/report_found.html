@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Found Item</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+    <h2>🔍 LostLink AI</h2>
+
+    <nav>
+
+        <a href="/">Home</a>
+        <a href="/report-lost">Report Lost</a>
+        <a href="/report-found">Report Found</a>
+
+    </nav>
+
+</header>
+
+
+<div class="container">
+
+<form action="/report-found" method="POST">
+
+<h2 class="search-title">
+📍 Report Found Item
+</h2>
+
+<hr><br>
+
+<h3>👤 Finder Details</h3>
+
+<label>Full Name</label>
+
+<input
+type="text"
+name="finder_name"
+placeholder="Enter Your Name"
+required>
+
+<label>Phone Number</label>
+
+<input
+type="text"
+name="phone"
+placeholder="Enter Phone Number"
+required>
+
+<label>Email Address</label>
+
+<input
+type="email"
+name="email"
+placeholder="Enter Email Address"
+required>
+
+<br><br>
+
+<h3>📦 Found Item Details</h3>
+
+<label>Item Name</label>
+
+<input
+type="text"
+name="item_name"
+placeholder="Example : iPhone 15"
+required>
+
+<label>Category</label>
+
+<select name="category" required>
+
+<option value="">Select Category</option>
+
+<option>Mobile</option>
+<option>Laptop</option>
+<option>Wallet</option>
+<option>Keys</option>
+<option>Documents</option>
+<option>Bag</option>
+<option>Watch</option>
+<option>Electronics</option>
+<option>Books</option>
+<option>ID Cards</option>
+<option>Jewellery</option>
+
+</select>
+
+<label>Brand</label>
+
+<input
+type="text"
+name="brand"
+placeholder="Example : Apple">
+
+<label>Color</label>
+
+<input
+type="text"
+name="color"
+placeholder="Example : Black">
+
+<label>Found Location</label>
+
+<input
+type="text"
+name="location"
+placeholder="Example : Railway Station">
+
+<label>Date Found</label>
+
+<input
+type="date"
+name="found_date">
+
+<label>Description</label>
+
+<textarea
+name="description"
+placeholder="Describe the found item..."></textarea>
+
+<div class="search-btn">
+
+<button type="submit">
+
+Submit Found Report
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+<footer>
+
+© 2026 LostLink AI
+
+</footer>
+
+</body>
+
+</html>
