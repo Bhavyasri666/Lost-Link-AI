@@ -194,30 +194,6 @@ This query returns the total number of nodes in the database.
 
 # Screenshots
 
-## Home Page
-
-![alt text](<WhatsApp Image 2026-08-06 at 5.28.39 PM.jpeg>)
-
-## Report Lost Item
-
-![alt text](<WhatsApp Image 2026-08-06 at 5.31.28 PM.jpeg>)
-
-## Report Found Item
-
-![alt text](<WhatsApp Image 2026-08-06 at 5.32.29 PM.jpeg>)
-
-## AI Matching Result
-
-![alt text](<WhatsApp Image 2026-08-06 at 5.28.18 PM-1.jpeg>)
-
-## CognoDB Graph
-
-![alt text](<WhatsApp Image 2026-08-06 at 7.43.28 PM.jpeg>)
-
-![alt text](<WhatsApp Image 2026-08-06 at 7.45.08 PM.jpeg>)
-
-![alt text](<WhatsApp Image 2026-08-06 at 7.48.36 PM.jpeg>)
----
 
 # Conclusion
 
