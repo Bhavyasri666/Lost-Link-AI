@@ -162,7 +162,7 @@ http://127.0.0.1:5000
 
 # Main Cypher Queries
 
-### View the complete graph
+### View the complete graph :This query displays all nodes and relationships stored in the graph database, providing a complete overview of the LostLink AI data model. 
 
 ```cypher
 MATCH(n)-[r]->(m)
@@ -172,7 +172,7 @@ LIMIT 100;
 
 This query displays all nodes and relationships stored in the graph.
 
-### View AI Matches
+### View AI Matches :This query retrieves AI-generated possible matches between lost and found items using the `POSSIBLE_MATCH` relationship.
 
 ```cypher
 MATCH(l:LostItem)-[r:POSSIBLE_MATCH]->(f:FoundItem)
@@ -181,7 +181,7 @@ RETURN l,r,f;
 
 This query retrieves all AI-generated matches between lost and found items.
 
-### Count Total Nodes
+### Count Total Nodes :This query returns the total number of nodes available in the CognoDB database. It helps verify that the seed data has been loaded successfully.
 
 ```cypher
 MATCH(n)
@@ -207,6 +207,8 @@ CongoDB Graphs: <img width="1600" height="814" alt="image" src="https://github.c
                 <img width="1600" height="805" alt="image" src="https://github.com/user-attachments/assets/9991d3fb-7d86-4e5b-8bc6-e341882e40fd" />
 
 #Demo Video : https://drive.google.com/file/d/18Xx3k56mMtiHiH0X19JczKZuWHYsenwd/view?usp=drivesdk 
+
+#Hosted Demo Link(Render): https://lost-link-ai.onrender.com
 
 # Conclusion
 
