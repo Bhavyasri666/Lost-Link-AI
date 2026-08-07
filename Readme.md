@@ -193,6 +193,18 @@ This query returns the total number of nodes in the database.
 ---
 
 # Screenshots
+Home-page :   <img width="1359" height="687" alt="image" src="https://github.com/user-attachments/assets/fd151818-ddc2-46e2-a559-8d95fc9235f2" />
+
+Report-Last : <img width="1363" height="691" alt="image" src="https://github.com/user-attachments/assets/3bcc9179-6b56-45e1-af15-b5b2e36ad56f" />
+
+
+Report-Found : <img width="1351" height="682" alt="image" src="https://github.com/user-attachments/assets/3b8424d9-0ae3-431c-bbb5-47c180473510" />
+
+Search-Result : <img width="1363" height="691" alt="image" src="https://github.com/user-attachments/assets/4722f9da-964f-497c-8bbe-1aa79b5b6f60" />
+
+CongoDB Graphs: <img width="1600" height="814" alt="image" src="https://github.com/user-attachments/assets/a27c0c79-f59e-4b5b-8273-38d44ee36d5f" />
+                <img width="1600" height="814" alt="image" src="https://github.com/user-attachments/assets/c07fc60e-5dd3-4e6b-81dd-2ea60790dc8a" />
+                <img width="1600" height="805" alt="image" src="https://github.com/user-attachments/assets/9991d3fb-7d86-4e5b-8bc6-e341882e40fd" />
 
 #Demo Video : https://drive.google.com/file/d/18Xx3k56mMtiHiH0X19JczKZuWHYsenwd/view?usp=drivesdk 
 
